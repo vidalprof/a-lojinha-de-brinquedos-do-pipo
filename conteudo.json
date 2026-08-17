@@ -549,53 +549,65 @@
   },
   {
    "id": "f08",
-   "mec": "ligar",
-   "selo": "LIGUE",
-   "enunciado": "Puxe a linha do dinheiro até o <b>número</b> certo.",
-   "dica": "Siga a linha até o par certo.",
+   "mec": "bingo",
+   "selo": "BINGO DO DINHEIRO",
+   "enunciado": "O Pipo mostra um dinheiro. Ache o número dele na sua cartela.",
+   "dica": "Olhe o número escrito no dinheiro e procure esse número na cartela.",
    "conceito": "objetivo2",
    "dados": [
     {
-     "k": "p0",
-     "s": "vale 1 real",
-     "img": "lb_moeda1",
-     "voz": "moeda de 1 real"
+     "selo": "BINGO DO DINHEIRO",
+     "tipo": "dinheiro",
+     "enun": "O Pipo mostra um dinheiro. Ache o <b>número</b> dele na cartela.",
+     "voz": "O Pipo mostra um dinheiro. Ache o número dele na sua cartela.",
+     "cartela": [
+      2,
+      5,
+      10,
+      20,
+      50,
+      100
+     ],
+     "fora": [
+      1
+     ],
+     "imgs": {
+      "1": "lb_moeda1",
+      "2": "lb_nota2",
+      "5": "lb_nota5",
+      "10": "lb_nota10",
+      "20": "lb_nota20",
+      "50": "lb_nota50",
+      "100": "lb_nota100"
+     }
     },
     {
-     "k": "p1",
-     "s": "vale 2 reais",
-     "img": "lb_nota2",
-     "voz": "nota de 2 reais"
-    },
-    {
-     "k": "p2",
-     "s": "vale 5 reais",
-     "img": "lb_nota5",
-     "voz": "nota de 5 reais"
-    },
-    {
-     "k": "p3",
-     "s": "vale 10 reais",
-     "img": "lb_nota10",
-     "voz": "nota de 10 reais"
-    },
-    {
-     "k": "p4",
-     "s": "vale 20 reais",
-     "img": "lb_nota20",
-     "voz": "nota de 20 reais"
+     "selo": "MAIS UMA CARTELA",
+     "tipo": "dinheiro",
+     "enun": "O Pipo mostra um dinheiro. Ache o <b>número</b> dele na cartela.",
+     "voz": "O Pipo mostra um dinheiro. Ache o número dele na sua cartela.",
+     "cartela": [
+      1,
+      5,
+      10,
+      20,
+      50,
+      100
+     ],
+     "fora": [
+      2
+     ],
+     "imgs": {
+      "1": "lb_moeda1",
+      "2": "lb_nota2",
+      "5": "lb_nota5",
+      "10": "lb_nota10",
+      "20": "lb_nota20",
+      "50": "lb_nota50",
+      "100": "lb_nota100"
+     }
     }
-   ],
-   "dadosExtra": {
-    "DICAS": [
-     "Olhe o número escrito no dinheiro.",
-     "O número é o valor: a moeda com 1 vale 1 real; a nota com 5 vale 5 reais. Siga a linha.",
-     "A resposta certa está acesa no fim da linha. Toque nela."
-    ],
-    "FEITOS": [],
-    "ENUN": "Puxe a linha do dinheiro até o <b>número</b> certo.",
-    "FECHO": "Você ligou todos!"
-   }
+   ]
   },
   {
    "id": "f09",
@@ -954,53 +966,65 @@
   },
   {
    "id": "f14",
-   "mec": "ligar",
-   "selo": "LIGUE",
-   "enunciado": "Cada dinheiro tem um valor. <b>Ligue</b> os certos.",
-   "dica": "Siga a linha até o par certo.",
+   "mec": "bingo",
+   "selo": "BINGO DO DINHEIRO",
+   "enunciado": "O Pipo mostra um dinheiro. Ache o número dele na sua cartela.",
+   "dica": "Olhe o número escrito no dinheiro e procure esse número na cartela.",
    "conceito": "objetivo4",
    "dados": [
     {
-     "k": "p0",
-     "s": "vale 1 real",
-     "img": "lb_moeda1",
-     "voz": "moeda de 1 real"
+     "selo": "BINGO DO DINHEIRO",
+     "tipo": "dinheiro",
+     "enun": "O Pipo mostra um dinheiro. Ache o <b>número</b> dele na cartela.",
+     "voz": "O Pipo mostra um dinheiro. Ache o número dele na sua cartela.",
+     "cartela": [
+      1,
+      2,
+      5,
+      10,
+      20,
+      50
+     ],
+     "fora": [
+      100
+     ],
+     "imgs": {
+      "1": "lb_moeda1",
+      "2": "lb_nota2",
+      "5": "lb_nota5",
+      "10": "lb_nota10",
+      "20": "lb_nota20",
+      "50": "lb_nota50",
+      "100": "lb_nota100"
+     }
     },
     {
-     "k": "p1",
-     "s": "vale 2 reais",
-     "img": "lb_nota2",
-     "voz": "nota de 2 reais"
-    },
-    {
-     "k": "p2",
-     "s": "vale 5 reais",
-     "img": "lb_nota5",
-     "voz": "nota de 5 reais"
-    },
-    {
-     "k": "p3",
-     "s": "vale 10 reais",
-     "img": "lb_nota10",
-     "voz": "nota de 10 reais"
-    },
-    {
-     "k": "p4",
-     "s": "vale 20 reais",
-     "img": "lb_nota20",
-     "voz": "nota de 20 reais"
+     "selo": "MAIS UMA CARTELA",
+     "tipo": "dinheiro",
+     "enun": "O Pipo mostra um dinheiro. Ache o <b>número</b> dele na cartela.",
+     "voz": "O Pipo mostra um dinheiro. Ache o número dele na sua cartela.",
+     "cartela": [
+      2,
+      5,
+      10,
+      20,
+      50,
+      100
+     ],
+     "fora": [
+      1
+     ],
+     "imgs": {
+      "1": "lb_moeda1",
+      "2": "lb_nota2",
+      "5": "lb_nota5",
+      "10": "lb_nota10",
+      "20": "lb_nota20",
+      "50": "lb_nota50",
+      "100": "lb_nota100"
+     }
     }
-   ],
-   "dadosExtra": {
-    "DICAS": [
-     "Olhe o número escrito no dinheiro.",
-     "O número é o valor: a moeda com 1 vale 1 real; a nota com 5 vale 5 reais. Siga a linha.",
-     "A resposta certa está acesa no fim da linha. Toque nela."
-    ],
-    "FEITOS": [],
-    "ENUN": "Cada dinheiro tem um valor. <b>Ligue</b> os certos.",
-    "FECHO": "Você ligou todos!"
-   }
+   ]
   },
   {
    "id": "f15",
