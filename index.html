@@ -1926,7 +1926,21 @@ function poeVitrine(t, feitas){
      nao dispara na 1a pintura) */
   setTimeout(function(){ if(fill&&fill.parentNode){ fill.style.width=pct+"%"; } },40);
 }
-function mostraBanner(msg,cb){bmsg.innerHTML=msg;banner.className="banner bom show";festa();sCerto();paraDeVigiar();mascoteFesteja();bcta.onclick=function(){arma();banner.className="banner";cb();};}
+function mostraBanner(msg,cb){
+  /* ⚠️⚠️ LICAO PAGA (Teatro, ago/2026, o Marcos jogando): uma fase fechava com
+     um "QUADRADO GRANDE desconfigurado" no lugar do aviso fininho. Causa: varias
+     pecas (pintar, pintar-canvas, memoria, sete-erros, achar-na-cena,
+     camadas-mapa, tracar-caminho) mandam no aviso de FIM DE FASE
+     `<div class="medal">★</div>`. Aqui a `.medal` e a MEDALHA DE 190px do FIM DA
+     ATIVIDADE (imagem do mascote) — entao o motor inflava a estrelinha num
+     quadradao verde vazio. O aviso de FASE nao leva medalha (o motor ja comemora
+     com confete). Tiro so a medalha-DIV (a medalha real do fim e <img>, nao casa
+     com este regex, entao continua intacta). Ponto unico: pega toda peca. */
+  /* ⚠️ regex por STRING (new RegExp), NAO literal /.../: o portao _qa/funcoes.py
+     nao entende literal de regex e perde a conta das aspas, fazendo os enunciados
+     seguintes vazarem como "funcao que nao existe". String o portao limpa certo. */
+  if(msg) msg = String(msg).replace(new RegExp("<div[^>]*medal[^>]*>[\\s\\S]*?</div>", "gi"), "");
+  bmsg.innerHTML=msg;banner.className="banner bom show";festa();sCerto();paraDeVigiar();mascoteFesteja();bcta.onclick=function(){arma();banner.className="banner";cb();};}
 function elogio(){ var n=[ID.pre+"_acerto1",ID.pre+"_acerto2",ID.pre+"_acerto3"]; falar(n[Math.floor(Math.random()*3)]); }
 function consolo(){ falar(Math.random()<0.5?ID.pre+"_erro1":ID.pre+"_erro2"); }
 /* ============ ALTO-FALANTE POR RESPOSTA (acessibilidade) ============
@@ -3070,6 +3084,16 @@ MEC["caixa-dinheiro"] = function(f, cen, fim){
        segue sendo o motor — mas com a comemoracao no meio. */
     function mostraBanner(msg, cb){
       if(typeof festa === "function") festa();
+      /* ⚠️⚠️ LICAO PAGA (Teatro, ago/2026), o Marcos jogando: uma fase fechava
+         com um "QUADRADO GRANDE desconfigurado" em vez do aviso fininho das
+         outras. Causa: 7 pecas (pintar, pintar-canvas, memoria, sete-erros,
+         achar-na-cena, camadas-mapa, tracar-caminho) mandam no aviso de fim
+         `<div class="medal">★</div>`. No motor a `.medal` e a MEDALHA DE 190px
+         do FIM da atividade (imagem do mascote), entao o motor inflava aquilo
+         num quadradao verde vazio com uma estrelinha. O aviso de FASE nao leva
+         medalha — o motor ja comemora com confete. Tiro a medalha do aviso de
+         fase aqui (conserto central: pega as 7 de uma vez). */
+      if(msg) msg = msg.replace(/<div[^>]*class=["']?[^"'>]*medal[^"'>]*["']?[^>]*>[\s\S]*?<\/div>/gi, "");
       if(typeof window.mostraBanner === "function"){
         window.mostraBanner(msg || "Muito bem!", _seguir); return;
       }
@@ -3439,6 +3463,16 @@ MEC["classificar"] = function(f, cen, fim){
        segue sendo o motor — mas com a comemoracao no meio. */
     function mostraBanner(msg, cb){
       if(typeof festa === "function") festa();
+      /* ⚠️⚠️ LICAO PAGA (Teatro, ago/2026), o Marcos jogando: uma fase fechava
+         com um "QUADRADO GRANDE desconfigurado" em vez do aviso fininho das
+         outras. Causa: 7 pecas (pintar, pintar-canvas, memoria, sete-erros,
+         achar-na-cena, camadas-mapa, tracar-caminho) mandam no aviso de fim
+         `<div class="medal">★</div>`. No motor a `.medal` e a MEDALHA DE 190px
+         do FIM da atividade (imagem do mascote), entao o motor inflava aquilo
+         num quadradao verde vazio com uma estrelinha. O aviso de FASE nao leva
+         medalha — o motor ja comemora com confete. Tiro a medalha do aviso de
+         fase aqui (conserto central: pega as 7 de uma vez). */
+      if(msg) msg = msg.replace(/<div[^>]*class=["']?[^"'>]*medal[^"'>]*["']?[^>]*>[\s\S]*?<\/div>/gi, "");
       if(typeof window.mostraBanner === "function"){
         window.mostraBanner(msg || "Muito bem!", _seguir); return;
       }
@@ -3933,6 +3967,16 @@ MEC["comparar"] = function(f, cen, fim){
        segue sendo o motor — mas com a comemoracao no meio. */
     function mostraBanner(msg, cb){
       if(typeof festa === "function") festa();
+      /* ⚠️⚠️ LICAO PAGA (Teatro, ago/2026), o Marcos jogando: uma fase fechava
+         com um "QUADRADO GRANDE desconfigurado" em vez do aviso fininho das
+         outras. Causa: 7 pecas (pintar, pintar-canvas, memoria, sete-erros,
+         achar-na-cena, camadas-mapa, tracar-caminho) mandam no aviso de fim
+         `<div class="medal">★</div>`. No motor a `.medal` e a MEDALHA DE 190px
+         do FIM da atividade (imagem do mascote), entao o motor inflava aquilo
+         num quadradao verde vazio com uma estrelinha. O aviso de FASE nao leva
+         medalha — o motor ja comemora com confete. Tiro a medalha do aviso de
+         fase aqui (conserto central: pega as 7 de uma vez). */
+      if(msg) msg = msg.replace(/<div[^>]*class=["']?[^"'>]*medal[^"'>]*["']?[^>]*>[\s\S]*?<\/div>/gi, "");
       if(typeof window.mostraBanner === "function"){
         window.mostraBanner(msg || "Muito bem!", _seguir); return;
       }
@@ -4544,6 +4588,16 @@ MEC["escolher"] = function(f, cen, fim){
        segue sendo o motor — mas com a comemoracao no meio. */
     function mostraBanner(msg, cb){
       if(typeof festa === "function") festa();
+      /* ⚠️⚠️ LICAO PAGA (Teatro, ago/2026), o Marcos jogando: uma fase fechava
+         com um "QUADRADO GRANDE desconfigurado" em vez do aviso fininho das
+         outras. Causa: 7 pecas (pintar, pintar-canvas, memoria, sete-erros,
+         achar-na-cena, camadas-mapa, tracar-caminho) mandam no aviso de fim
+         `<div class="medal">★</div>`. No motor a `.medal` e a MEDALHA DE 190px
+         do FIM da atividade (imagem do mascote), entao o motor inflava aquilo
+         num quadradao verde vazio com uma estrelinha. O aviso de FASE nao leva
+         medalha — o motor ja comemora com confete. Tiro a medalha do aviso de
+         fase aqui (conserto central: pega as 7 de uma vez). */
+      if(msg) msg = msg.replace(/<div[^>]*class=["']?[^"'>]*medal[^"'>]*["']?[^>]*>[\s\S]*?<\/div>/gi, "");
       if(typeof window.mostraBanner === "function"){
         window.mostraBanner(msg || "Muito bem!", _seguir); return;
       }
@@ -4903,6 +4957,16 @@ MEC["ligar"] = function(f, cen, fim){
        segue sendo o motor — mas com a comemoracao no meio. */
     function mostraBanner(msg, cb){
       if(typeof festa === "function") festa();
+      /* ⚠️⚠️ LICAO PAGA (Teatro, ago/2026), o Marcos jogando: uma fase fechava
+         com um "QUADRADO GRANDE desconfigurado" em vez do aviso fininho das
+         outras. Causa: 7 pecas (pintar, pintar-canvas, memoria, sete-erros,
+         achar-na-cena, camadas-mapa, tracar-caminho) mandam no aviso de fim
+         `<div class="medal">★</div>`. No motor a `.medal` e a MEDALHA DE 190px
+         do FIM da atividade (imagem do mascote), entao o motor inflava aquilo
+         num quadradao verde vazio com uma estrelinha. O aviso de FASE nao leva
+         medalha — o motor ja comemora com confete. Tiro a medalha do aviso de
+         fase aqui (conserto central: pega as 7 de uma vez). */
+      if(msg) msg = msg.replace(/<div[^>]*class=["']?[^"'>]*medal[^"'>]*["']?[^>]*>[\s\S]*?<\/div>/gi, "");
       if(typeof window.mostraBanner === "function"){
         window.mostraBanner(msg || "Muito bem!", _seguir); return;
       }
@@ -5399,6 +5463,16 @@ MEC["memoria"] = function(f, cen, fim){
        segue sendo o motor — mas com a comemoracao no meio. */
     function mostraBanner(msg, cb){
       if(typeof festa === "function") festa();
+      /* ⚠️⚠️ LICAO PAGA (Teatro, ago/2026), o Marcos jogando: uma fase fechava
+         com um "QUADRADO GRANDE desconfigurado" em vez do aviso fininho das
+         outras. Causa: 7 pecas (pintar, pintar-canvas, memoria, sete-erros,
+         achar-na-cena, camadas-mapa, tracar-caminho) mandam no aviso de fim
+         `<div class="medal">★</div>`. No motor a `.medal` e a MEDALHA DE 190px
+         do FIM da atividade (imagem do mascote), entao o motor inflava aquilo
+         num quadradao verde vazio com uma estrelinha. O aviso de FASE nao leva
+         medalha — o motor ja comemora com confete. Tiro a medalha do aviso de
+         fase aqui (conserto central: pega as 7 de uma vez). */
+      if(msg) msg = msg.replace(/<div[^>]*class=["']?[^"'>]*medal[^"'>]*["']?[^>]*>[\s\S]*?<\/div>/gi, "");
       if(typeof window.mostraBanner === "function"){
         window.mostraBanner(msg || "Muito bem!", _seguir); return;
       }
@@ -5940,6 +6014,16 @@ MEC["ordenar"] = function(f, cen, fim){
        segue sendo o motor — mas com a comemoracao no meio. */
     function mostraBanner(msg, cb){
       if(typeof festa === "function") festa();
+      /* ⚠️⚠️ LICAO PAGA (Teatro, ago/2026), o Marcos jogando: uma fase fechava
+         com um "QUADRADO GRANDE desconfigurado" em vez do aviso fininho das
+         outras. Causa: 7 pecas (pintar, pintar-canvas, memoria, sete-erros,
+         achar-na-cena, camadas-mapa, tracar-caminho) mandam no aviso de fim
+         `<div class="medal">★</div>`. No motor a `.medal` e a MEDALHA DE 190px
+         do FIM da atividade (imagem do mascote), entao o motor inflava aquilo
+         num quadradao verde vazio com uma estrelinha. O aviso de FASE nao leva
+         medalha — o motor ja comemora com confete. Tiro a medalha do aviso de
+         fase aqui (conserto central: pega as 7 de uma vez). */
+      if(msg) msg = msg.replace(/<div[^>]*class=["']?[^"'>]*medal[^"'>]*["']?[^>]*>[\s\S]*?<\/div>/gi, "");
       if(typeof window.mostraBanner === "function"){
         window.mostraBanner(msg || "Muito bem!", _seguir); return;
       }
@@ -6445,6 +6529,16 @@ MEC["pintar-canvas"] = function(f, cen, fim){
        segue sendo o motor — mas com a comemoracao no meio. */
     function mostraBanner(msg, cb){
       if(typeof festa === "function") festa();
+      /* ⚠️⚠️ LICAO PAGA (Teatro, ago/2026), o Marcos jogando: uma fase fechava
+         com um "QUADRADO GRANDE desconfigurado" em vez do aviso fininho das
+         outras. Causa: 7 pecas (pintar, pintar-canvas, memoria, sete-erros,
+         achar-na-cena, camadas-mapa, tracar-caminho) mandam no aviso de fim
+         `<div class="medal">★</div>`. No motor a `.medal` e a MEDALHA DE 190px
+         do FIM da atividade (imagem do mascote), entao o motor inflava aquilo
+         num quadradao verde vazio com uma estrelinha. O aviso de FASE nao leva
+         medalha — o motor ja comemora com confete. Tiro a medalha do aviso de
+         fase aqui (conserto central: pega as 7 de uma vez). */
+      if(msg) msg = msg.replace(/<div[^>]*class=["']?[^"'>]*medal[^"'>]*["']?[^>]*>[\s\S]*?<\/div>/gi, "");
       if(typeof window.mostraBanner === "function"){
         window.mostraBanner(msg || "Muito bem!", _seguir); return;
       }
