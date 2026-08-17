@@ -254,6 +254,36 @@
       "img": "lb_nota10",
       "alvo": "nota",
       "t": "10 REAIS"
+     },
+     {
+      "img": "lb_c05",
+      "alvo": "moeda",
+      "t": "5 CENTAVOS"
+     },
+     {
+      "img": "lb_c10",
+      "alvo": "moeda",
+      "t": "10 CENTAVOS"
+     },
+     {
+      "img": "lb_c25",
+      "alvo": "moeda",
+      "t": "25 CENTAVOS"
+     },
+     {
+      "img": "lb_c50",
+      "alvo": "moeda",
+      "t": "50 CENTAVOS"
+     },
+     {
+      "img": "lb_nota50",
+      "alvo": "nota",
+      "t": "50 REAIS"
+     },
+     {
+      "img": "lb_nota100",
+      "alvo": "nota",
+      "t": "100 REAIS"
      }
     ],
     "DICAS": [
@@ -370,60 +400,46 @@
    "dados": [
     {
      "a": 1,
-     "b": 2,
-     "modo": "blocos",
-     "selo": "QUAL VALE MAIS?",
-     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
-     "voz": "Olhe os dois. Qual vale mais?",
-     "imgA": "lb_moeda1",
-     "imgB": "lb_nota2"
-    },
-    {
-     "a": 1,
      "b": 5,
      "modo": "blocos",
+     "imgA": "lb_moeda1",
+     "imgB": "lb_nota5",
+     "semSinal": true,
+     "pergunta": "mais",
      "selo": "QUAL VALE MAIS?",
      "enun": "Olhe os dois. <b>Qual vale mais?</b>",
-     "voz": "Olhe os dois. Qual vale mais?",
-     "imgA": "lb_moeda1",
-     "imgB": "lb_nota5"
-    },
-    {
-     "a": 1,
-     "b": 10,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
-     "voz": "Olhe os dois. Qual vale mais?",
-     "imgA": "lb_moeda1",
-     "imgB": "lb_nota10"
-    },
-    {
-     "a": 1,
-     "b": 20,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
-     "voz": "Olhe os dois. Qual vale mais?",
-     "imgA": "lb_moeda1",
-     "imgB": "lb_nota20"
+     "voz": "Olhe os dois. Qual vale mais?"
     },
     {
      "a": 2,
-     "b": 1,
+     "b": 10,
      "modo": "blocos",
+     "imgA": "lb_nota2",
+     "imgB": "lb_nota10",
+     "semSinal": true,
+     "pergunta": "mais",
      "selo": "QUAL VALE MAIS?",
      "enun": "Olhe os dois. <b>Qual vale mais?</b>",
-     "voz": "Olhe os dois. Qual vale mais?",
-     "imgA": "lb_nota2",
-     "imgB": "lb_moeda1"
+     "voz": "Olhe os dois. Qual vale mais?"
+    },
+    {
+     "a": 5,
+     "b": 20,
+     "modo": "blocos",
+     "imgA": "lb_nota5",
+     "imgB": "lb_nota20",
+     "semSinal": true,
+     "pergunta": "mais",
+     "selo": "QUAL VALE MAIS?",
+     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe os dois. Qual vale mais?"
     }
    ],
    "dadosExtra": {
     "D1": [
-     "As duas começam no <b>mesmo lugar</b>. Olhe qual chega mais longe.",
-     "Quanto maior o número, mais o dinheiro vale. Corra o dedo e compare.",
-     "A que vale mais está acesa. Toque nela."
+     "Olhe o número em cada dinheiro. Quanto maior o número, mais ele vale.",
+     "Compare os dois números. O dinheiro certo está aceso.",
+     "Toque no dinheiro que está aceso."
     ]
    }
   },
@@ -643,6 +659,36 @@
       "img": "lb_nota10",
       "alvo": "nota",
       "t": "10 REAIS"
+     },
+     {
+      "img": "lb_c05",
+      "alvo": "moeda",
+      "t": "5 CENTAVOS"
+     },
+     {
+      "img": "lb_c10",
+      "alvo": "moeda",
+      "t": "10 CENTAVOS"
+     },
+     {
+      "img": "lb_c25",
+      "alvo": "moeda",
+      "t": "25 CENTAVOS"
+     },
+     {
+      "img": "lb_c50",
+      "alvo": "moeda",
+      "t": "50 CENTAVOS"
+     },
+     {
+      "img": "lb_nota50",
+      "alvo": "nota",
+      "t": "50 REAIS"
+     },
+     {
+      "img": "lb_nota100",
+      "alvo": "nota",
+      "t": "100 REAIS"
      }
     ],
     "DICAS": [
@@ -761,58 +807,44 @@
      "a": 2,
      "b": 5,
      "modo": "blocos",
+     "imgA": "lb_nota2",
+     "imgB": "lb_nota5",
+     "semSinal": true,
+     "pergunta": "mais",
      "selo": "QUAL VALE MAIS?",
-     "enun": "Compare o dinheiro. <b>Qual vale mais?</b>",
-     "voz": "Compare o dinheiro. Qual vale mais?",
-     "imgA": "lb_nota2",
-     "imgB": "lb_nota5"
+     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe os dois. Qual vale mais?"
     },
     {
-     "a": 2,
-     "b": 10,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Compare o dinheiro. <b>Qual vale mais?</b>",
-     "voz": "Compare o dinheiro. Qual vale mais?",
-     "imgA": "lb_nota2",
-     "imgB": "lb_nota10"
-    },
-    {
-     "a": 2,
+     "a": 10,
      "b": 20,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Compare o dinheiro. <b>Qual vale mais?</b>",
-     "voz": "Compare o dinheiro. Qual vale mais?",
-     "imgA": "lb_nota2",
-     "imgB": "lb_nota20"
+     "modo": "blocos",
+     "imgA": "lb_nota10",
+     "imgB": "lb_nota20",
+     "semSinal": true,
+     "pergunta": "mais",
+     "selo": "QUAL VALE MAIS?",
+     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe os dois. Qual vale mais?"
     },
     {
      "a": 5,
-     "b": 1,
+     "b": 5,
      "modo": "blocos",
-     "selo": "QUAL VALE MAIS?",
-     "enun": "Compare o dinheiro. <b>Qual vale mais?</b>",
-     "voz": "Compare o dinheiro. Qual vale mais?",
      "imgA": "lb_nota5",
-     "imgB": "lb_moeda1"
-    },
-    {
-     "a": 5,
-     "b": 2,
-     "modo": "blocos",
-     "selo": "QUAL VALE MAIS?",
-     "enun": "Compare o dinheiro. <b>Qual vale mais?</b>",
-     "voz": "Compare o dinheiro. Qual vale mais?",
-     "imgA": "lb_nota5",
-     "imgB": "lb_nota2"
+     "imgB": "lb_nota5",
+     "semSinal": true,
+     "pergunta": "mais",
+     "selo": "SERÁ QUE É IGUAL?",
+     "enun": "Olhe bem os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe bem os dois. Qual vale mais?"
     }
    ],
    "dadosExtra": {
     "D1": [
-     "As duas começam no <b>mesmo lugar</b>. Olhe qual chega mais longe.",
-     "Quanto maior o número, mais o dinheiro vale. Corra o dedo e compare.",
-     "A que vale mais está acesa. Toque nela."
+     "Olhe o número em cada dinheiro. Quanto maior o número, mais ele vale.",
+     "Compare os dois números. O dinheiro certo está aceso.",
+     "Toque no dinheiro que está aceso."
     ]
    }
   },
@@ -1032,6 +1064,36 @@
       "img": "lb_nota10",
       "alvo": "nota",
       "t": "10 REAIS"
+     },
+     {
+      "img": "lb_c05",
+      "alvo": "moeda",
+      "t": "5 CENTAVOS"
+     },
+     {
+      "img": "lb_c10",
+      "alvo": "moeda",
+      "t": "10 CENTAVOS"
+     },
+     {
+      "img": "lb_c25",
+      "alvo": "moeda",
+      "t": "25 CENTAVOS"
+     },
+     {
+      "img": "lb_c50",
+      "alvo": "moeda",
+      "t": "50 CENTAVOS"
+     },
+     {
+      "img": "lb_nota50",
+      "alvo": "nota",
+      "t": "50 REAIS"
+     },
+     {
+      "img": "lb_nota100",
+      "alvo": "nota",
+      "t": "100 REAIS"
      }
     ],
     "DICAS": [
@@ -1147,61 +1209,47 @@
    "conceito": "objetivo5",
    "dados": [
     {
-     "a": 5,
+     "a": 2,
      "b": 10,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Qual tem o <b>maior valor</b>?",
-     "voz": "Qual tem o maior valor?",
-     "imgA": "lb_nota5",
-     "imgB": "lb_nota10"
+     "modo": "blocos",
+     "imgA": "lb_nota2",
+     "imgB": "lb_nota10",
+     "semSinal": true,
+     "pergunta": "menos",
+     "selo": "QUAL VALE MENOS?",
+     "enun": "Olhe os dois. <b>Qual vale menos?</b>",
+     "voz": "Olhe os dois. Qual vale menos?"
     },
     {
      "a": 5,
      "b": 20,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Qual tem o <b>maior valor</b>?",
-     "voz": "Qual tem o maior valor?",
+     "modo": "blocos",
      "imgA": "lb_nota5",
-     "imgB": "lb_nota20"
+     "imgB": "lb_nota20",
+     "semSinal": true,
+     "pergunta": "menos",
+     "selo": "QUAL VALE MENOS?",
+     "enun": "Olhe os dois. <b>Qual vale menos?</b>",
+     "voz": "Olhe os dois. Qual vale menos?"
     },
     {
      "a": 10,
-     "b": 1,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Qual tem o <b>maior valor</b>?",
-     "voz": "Qual tem o maior valor?",
+     "b": 10,
+     "modo": "blocos",
      "imgA": "lb_nota10",
-     "imgB": "lb_moeda1"
-    },
-    {
-     "a": 10,
-     "b": 2,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Qual tem o <b>maior valor</b>?",
-     "voz": "Qual tem o maior valor?",
-     "imgA": "lb_nota10",
-     "imgB": "lb_nota2"
-    },
-    {
-     "a": 10,
-     "b": 5,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Qual tem o <b>maior valor</b>?",
-     "voz": "Qual tem o maior valor?",
-     "imgA": "lb_nota10",
-     "imgB": "lb_nota5"
+     "imgB": "lb_nota10",
+     "semSinal": true,
+     "pergunta": "mais",
+     "selo": "SERÁ QUE É IGUAL?",
+     "enun": "Olhe bem os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe bem os dois. Qual vale mais?"
     }
    ],
    "dadosExtra": {
     "D1": [
-     "As duas começam no <b>mesmo lugar</b>. Olhe qual chega mais longe.",
-     "Quanto maior o número, mais o dinheiro vale. Corra o dedo e compare.",
-     "A que vale mais está acesa. Toque nela."
+     "Olhe o número em cada dinheiro. Quanto maior o número, mais ele vale.",
+     "Compare os dois números. O dinheiro certo está aceso.",
+     "Toque no dinheiro que está aceso."
     ]
    }
   },
@@ -1459,6 +1507,36 @@
       "img": "lb_nota10",
       "alvo": "nota",
       "t": "10 REAIS"
+     },
+     {
+      "img": "lb_c05",
+      "alvo": "moeda",
+      "t": "5 CENTAVOS"
+     },
+     {
+      "img": "lb_c10",
+      "alvo": "moeda",
+      "t": "10 CENTAVOS"
+     },
+     {
+      "img": "lb_c25",
+      "alvo": "moeda",
+      "t": "25 CENTAVOS"
+     },
+     {
+      "img": "lb_c50",
+      "alvo": "moeda",
+      "t": "50 CENTAVOS"
+     },
+     {
+      "img": "lb_nota50",
+      "alvo": "nota",
+      "t": "50 REAIS"
+     },
+     {
+      "img": "lb_nota100",
+      "alvo": "nota",
+      "t": "100 REAIS"
      }
     ],
     "DICAS": [
@@ -1575,60 +1653,46 @@
    "dados": [
     {
      "a": 10,
-     "b": 20,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Agora bem parecidos. <b>Qual vale mais?</b>",
-     "voz": "Agora bem parecidos. Qual vale mais?",
+     "b": 50,
+     "modo": "blocos",
      "imgA": "lb_nota10",
-     "imgB": "lb_nota20"
+     "imgB": "lb_nota50",
+     "semSinal": true,
+     "pergunta": "mais",
+     "selo": "QUAL VALE MAIS?",
+     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe os dois. Qual vale mais?"
     },
     {
      "a": 20,
-     "b": 1,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Agora bem parecidos. <b>Qual vale mais?</b>",
-     "voz": "Agora bem parecidos. Qual vale mais?",
+     "b": 100,
+     "modo": "blocos",
      "imgA": "lb_nota20",
-     "imgB": "lb_moeda1"
+     "imgB": "lb_nota100",
+     "semSinal": true,
+     "pergunta": "menos",
+     "selo": "QUAL VALE MENOS?",
+     "enun": "Olhe os dois. <b>Qual vale menos?</b>",
+     "voz": "Olhe os dois. Qual vale menos?"
     },
     {
-     "a": 20,
-     "b": 2,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Agora bem parecidos. <b>Qual vale mais?</b>",
-     "voz": "Agora bem parecidos. Qual vale mais?",
-     "imgA": "lb_nota20",
-     "imgB": "lb_nota2"
-    },
-    {
-     "a": 20,
-     "b": 5,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Agora bem parecidos. <b>Qual vale mais?</b>",
-     "voz": "Agora bem parecidos. Qual vale mais?",
-     "imgA": "lb_nota20",
-     "imgB": "lb_nota5"
-    },
-    {
-     "a": 20,
-     "b": 10,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Agora bem parecidos. <b>Qual vale mais?</b>",
-     "voz": "Agora bem parecidos. Qual vale mais?",
-     "imgA": "lb_nota20",
-     "imgB": "lb_nota10"
+     "a": 50,
+     "b": 50,
+     "modo": "blocos",
+     "imgA": "lb_nota50",
+     "imgB": "lb_nota50",
+     "semSinal": true,
+     "pergunta": "mais",
+     "selo": "SERÁ QUE É IGUAL?",
+     "enun": "Olhe bem os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe bem os dois. Qual vale mais?"
     }
    ],
    "dadosExtra": {
     "D1": [
-     "As duas começam no <b>mesmo lugar</b>. Olhe qual chega mais longe.",
-     "Quanto maior o número, mais o dinheiro vale. Corra o dedo e compare.",
-     "A que vale mais está acesa. Toque nela."
+     "Olhe o número em cada dinheiro. Quanto maior o número, mais ele vale.",
+     "Compare os dois números. O dinheiro certo está aceso.",
+     "Toque no dinheiro que está aceso."
     ]
    }
   },
@@ -1848,6 +1912,36 @@
       "img": "lb_nota10",
       "alvo": "nota",
       "t": "10 REAIS"
+     },
+     {
+      "img": "lb_c05",
+      "alvo": "moeda",
+      "t": "5 CENTAVOS"
+     },
+     {
+      "img": "lb_c10",
+      "alvo": "moeda",
+      "t": "10 CENTAVOS"
+     },
+     {
+      "img": "lb_c25",
+      "alvo": "moeda",
+      "t": "25 CENTAVOS"
+     },
+     {
+      "img": "lb_c50",
+      "alvo": "moeda",
+      "t": "50 CENTAVOS"
+     },
+     {
+      "img": "lb_nota50",
+      "alvo": "nota",
+      "t": "50 REAIS"
+     },
+     {
+      "img": "lb_nota100",
+      "alvo": "nota",
+      "t": "100 REAIS"
      }
     ],
     "DICAS": [
@@ -1963,61 +2057,47 @@
    "conceito": "objetivo8",
    "dados": [
     {
-     "a": 1,
-     "b": 2,
+     "a": 5,
+     "b": 50,
      "modo": "blocos",
+     "imgA": "lb_nota5",
+     "imgB": "lb_nota50",
+     "semSinal": true,
+     "pergunta": "mais",
      "selo": "QUAL VALE MAIS?",
-     "enun": "Você já compara! <b>Qual vale mais?</b>",
-     "voz": "Você já compara! Qual vale mais?",
-     "imgA": "lb_moeda1",
-     "imgB": "lb_nota2"
+     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe os dois. Qual vale mais?"
     },
     {
-     "a": 1,
-     "b": 5,
-     "modo": "blocos",
-     "selo": "QUAL VALE MAIS?",
-     "enun": "Você já compara! <b>Qual vale mais?</b>",
-     "voz": "Você já compara! Qual vale mais?",
-     "imgA": "lb_moeda1",
-     "imgB": "lb_nota5"
-    },
-    {
-     "a": 1,
+     "a": 20,
      "b": 10,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Você já compara! <b>Qual vale mais?</b>",
-     "voz": "Você já compara! Qual vale mais?",
-     "imgA": "lb_moeda1",
-     "imgB": "lb_nota10"
-    },
-    {
-     "a": 1,
-     "b": 20,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Você já compara! <b>Qual vale mais?</b>",
-     "voz": "Você já compara! Qual vale mais?",
-     "imgA": "lb_moeda1",
-     "imgB": "lb_nota20"
-    },
-    {
-     "a": 2,
-     "b": 1,
      "modo": "blocos",
-     "selo": "QUAL VALE MAIS?",
-     "enun": "Você já compara! <b>Qual vale mais?</b>",
-     "voz": "Você já compara! Qual vale mais?",
-     "imgA": "lb_nota2",
-     "imgB": "lb_moeda1"
+     "imgA": "lb_nota20",
+     "imgB": "lb_nota10",
+     "semSinal": true,
+     "pergunta": "menos",
+     "selo": "QUAL VALE MENOS?",
+     "enun": "Olhe os dois. <b>Qual vale menos?</b>",
+     "voz": "Olhe os dois. Qual vale menos?"
+    },
+    {
+     "a": 100,
+     "b": 100,
+     "modo": "blocos",
+     "imgA": "lb_nota100",
+     "imgB": "lb_nota100",
+     "semSinal": true,
+     "pergunta": "mais",
+     "selo": "SERÁ QUE É IGUAL?",
+     "enun": "Olhe bem os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe bem os dois. Qual vale mais?"
     }
    ],
    "dadosExtra": {
     "D1": [
-     "As duas começam no <b>mesmo lugar</b>. Olhe qual chega mais longe.",
-     "Quanto maior o número, mais o dinheiro vale. Corra o dedo e compare.",
-     "A que vale mais está acesa. Toque nela."
+     "Olhe o número em cada dinheiro. Quanto maior o número, mais ele vale.",
+     "Compare os dois números. O dinheiro certo está aceso.",
+     "Toque no dinheiro que está aceso."
     ]
    }
   },
@@ -2237,6 +2317,36 @@
       "img": "lb_nota10",
       "alvo": "nota",
       "t": "10 REAIS"
+     },
+     {
+      "img": "lb_c05",
+      "alvo": "moeda",
+      "t": "5 CENTAVOS"
+     },
+     {
+      "img": "lb_c10",
+      "alvo": "moeda",
+      "t": "10 CENTAVOS"
+     },
+     {
+      "img": "lb_c25",
+      "alvo": "moeda",
+      "t": "25 CENTAVOS"
+     },
+     {
+      "img": "lb_c50",
+      "alvo": "moeda",
+      "t": "50 CENTAVOS"
+     },
+     {
+      "img": "lb_nota50",
+      "alvo": "nota",
+      "t": "50 REAIS"
+     },
+     {
+      "img": "lb_nota100",
+      "alvo": "nota",
+      "t": "100 REAIS"
      }
     ],
     "DICAS": [
@@ -2352,61 +2462,47 @@
    "conceito": "objetivo9",
    "dados": [
     {
-     "a": 2,
-     "b": 5,
+     "a": 10,
+     "b": 100,
      "modo": "blocos",
+     "imgA": "lb_nota10",
+     "imgB": "lb_nota100",
+     "semSinal": true,
+     "pergunta": "mais",
      "selo": "QUAL VALE MAIS?",
-     "enun": "Toque no que <b>vale mais</b>.",
-     "voz": "Toque no que vale mais.",
-     "imgA": "lb_nota2",
-     "imgB": "lb_nota5"
+     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe os dois. Qual vale mais?"
     },
     {
-     "a": 2,
-     "b": 10,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Toque no que <b>vale mais</b>.",
-     "voz": "Toque no que vale mais.",
-     "imgA": "lb_nota2",
-     "imgB": "lb_nota10"
-    },
-    {
-     "a": 2,
+     "a": 50,
      "b": 20,
-     "modo": "numeros",
-     "selo": "SÓ OS NÚMEROS",
-     "enun": "Toque no que <b>vale mais</b>.",
-     "voz": "Toque no que vale mais.",
-     "imgA": "lb_nota2",
-     "imgB": "lb_nota20"
+     "modo": "blocos",
+     "imgA": "lb_nota50",
+     "imgB": "lb_nota20",
+     "semSinal": true,
+     "pergunta": "menos",
+     "selo": "QUAL VALE MENOS?",
+     "enun": "Olhe os dois. <b>Qual vale menos?</b>",
+     "voz": "Olhe os dois. Qual vale menos?"
     },
     {
-     "a": 5,
-     "b": 1,
+     "a": 20,
+     "b": 20,
      "modo": "blocos",
-     "selo": "QUAL VALE MAIS?",
-     "enun": "Toque no que <b>vale mais</b>.",
-     "voz": "Toque no que vale mais.",
-     "imgA": "lb_nota5",
-     "imgB": "lb_moeda1"
-    },
-    {
-     "a": 5,
-     "b": 2,
-     "modo": "blocos",
-     "selo": "QUAL VALE MAIS?",
-     "enun": "Toque no que <b>vale mais</b>.",
-     "voz": "Toque no que vale mais.",
-     "imgA": "lb_nota5",
-     "imgB": "lb_nota2"
+     "imgA": "lb_nota20",
+     "imgB": "lb_nota20",
+     "semSinal": true,
+     "pergunta": "mais",
+     "selo": "SERÁ QUE É IGUAL?",
+     "enun": "Olhe bem os dois. <b>Qual vale mais?</b>",
+     "voz": "Olhe bem os dois. Qual vale mais?"
     }
    ],
    "dadosExtra": {
     "D1": [
-     "As duas começam no <b>mesmo lugar</b>. Olhe qual chega mais longe.",
-     "Quanto maior o número, mais o dinheiro vale. Corra o dedo e compare.",
-     "A que vale mais está acesa. Toque nela."
+     "Olhe o número em cada dinheiro. Quanto maior o número, mais ele vale.",
+     "Compare os dois números. O dinheiro certo está aceso.",
+     "Toque no dinheiro que está aceso."
     ]
    }
   },
