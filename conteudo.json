@@ -1549,98 +1549,45 @@
   },
   {
    "id": "f22",
-   "mec": "caixa-dinheiro",
-   "selo": "CAIXA-DINHEIRO",
-   "enunciado": "Você é o caixa! Monte o valor na <b>bandeja</b>.",
-   "dica": "Olhe a régua verde: ela diz quanto falta.",
+   "mec": "ordenar",
+   "selo": "EM ORDEM",
+   "enunciado": "Ponha o dinheiro do que vale menos ao que vale mais.",
+   "dica": "Procure sempre o dinheiro que vale menos entre os que sobraram.",
    "conceito": "objetivo6",
    "dados": [
     {
-     "v": 1,
-     "t": "moeda",
-     "img": "lb_moeda1"
-    },
-    {
-     "v": 2,
-     "t": "nota",
-     "img": "lb_nota2"
-    },
-    {
      "v": 5,
-     "t": "nota",
-     "img": "lb_nota5"
+     "img": "lb_nota5",
+     "nome": "5 REAIS"
     },
     {
      "v": 10,
-     "t": "nota",
-     "img": "lb_nota10"
+     "img": "lb_nota10",
+     "nome": "10 REAIS"
     },
     {
      "v": 20,
-     "t": "nota",
-     "img": "lb_nota20"
+     "img": "lb_nota20",
+     "nome": "20 REAIS"
+    },
+    {
+     "v": 50,
+     "img": "lb_nota50",
+     "nome": "50 REAIS"
     }
    ],
    "dadosExtra": {
-    "RODADAS": [
-     {
-      "base": 0,
-      "alvo": 10,
-      "selo": "COMPRA",
-      "img": "lb_urso",
-      "nome": "URSO",
-      "fala": "Compre o URSO! Ele custa <b>10 reais</b>. Monte o dinheiro na bandeja."
-     },
-     {
-      "base": 0,
-      "alvo": 15,
-      "selo": "COMPRA",
-      "img": "lb_foguete",
-      "nome": "FOGUETE",
-      "fala": "Compre o FOGUETE! Ele custa <b>15 reais</b>. Monte o dinheiro na bandeja."
-     },
-     {
-      "base": 0,
-      "alvo": 12,
-      "selo": "COMPRA",
-      "img": "lb_boneca",
-      "nome": "BONECA",
-      "fala": "Compre a BONECA! Ela custa <b>12 reais</b>. Monte o dinheiro na bandeja."
-     }
-    ],
-    "DINHEIRO": [
-     {
-      "v": 1,
-      "t": "moeda",
-      "img": "lb_moeda1"
-     },
-     {
-      "v": 2,
-      "t": "nota",
-      "img": "lb_nota2"
-     },
-     {
-      "v": 5,
-      "t": "nota",
-      "img": "lb_nota5"
-     },
-     {
-      "v": 10,
-      "t": "nota",
-      "img": "lb_nota10"
-     },
-     {
-      "v": 20,
-      "t": "nota",
-      "img": "lb_nota20"
-     }
-    ],
-    "DICAS": [
-     "Olhe a régua verde: ela mostra quanto ainda falta.",
-     "Escolha um dinheiro que <b>caiba</b> no que falta. As que cabem estão piscando.",
-     "Deixa comigo: eu ponho esta peça e você continua."
-    ],
-    "CAIXAIMG": "lb_registradora"
+    "ORDTXT": {
+     "selo": "EM ORDEM",
+     "balao": "Ponha o dinheiro <b>do que vale menos ao que vale mais</b>.",
+     "hint": "Toque no dinheiro ou arraste até a fila.",
+     "d": [
+      "Olhe o número em cada dinheiro e procure o <b>menor</b>.",
+      "O menor que sobrou está <b>piscando</b>. Toque nele.",
+      "Era este! Vamos juntos: eu ponho e você segue."
+     ],
+     "fim": "Fila pronta! Do que vale menos ao que vale mais."
+    }
    }
   },
   {
@@ -1698,106 +1645,40 @@
   },
   {
    "id": "f25",
-   "mec": "escolher",
-   "selo": "ESCOLHA",
-   "enunciado": "Você já conhece! <b>Quanto vale?</b>",
-   "dica": "Procure o número escrito no dinheiro.",
+   "mec": "ordenar",
+   "selo": "EM ORDEM",
+   "enunciado": "Ponha o dinheiro do que vale menos ao que vale mais.",
+   "dica": "Procure sempre o dinheiro que vale menos entre os que sobraram.",
    "conceito": "objetivo7",
    "dados": [
     {
-     "img": "lb_nota20",
-     "p": "Você já conhece! <b>Quanto vale?</b>",
-     "c": "20 REAIS",
-     "e": [
-      "1 REAL",
-      "2 REAIS",
-      "5 REAIS"
-     ],
-     "d": [
-      "Procure o <b>número</b> escrito no dinheiro.",
-      "O número diz quantos reais vale. Vamos ler juntos.",
-      "É <b>20 REAIS</b>. Toque para seguir."
-     ]
-    },
-    {
+     "v": 1,
      "img": "lb_moeda1",
-     "p": "Você já conhece! <b>Quanto vale?</b>",
-     "c": "1 REAL",
-     "e": [
-      "2 REAIS",
-      "5 REAIS",
-      "10 REAIS"
-     ],
-     "d": [
-      "Procure o <b>número</b> escrito no dinheiro.",
-      "O número diz quantos reais vale. Vamos ler juntos.",
-      "É <b>1 REAL</b>. Toque para seguir."
-     ]
+     "nome": "1 REAL"
     },
     {
+     "v": 2,
      "img": "lb_nota2",
-     "p": "Você já conhece! <b>Quanto vale?</b>",
-     "c": "2 REAIS",
-     "e": [
-      "1 REAL",
-      "5 REAIS",
-      "10 REAIS"
-     ],
-     "d": [
-      "Procure o <b>número</b> escrito no dinheiro.",
-      "O número diz quantos reais vale. Vamos ler juntos.",
-      "É <b>2 REAIS</b>. Toque para seguir."
-     ]
+     "nome": "2 REAIS"
     },
     {
+     "v": 5,
      "img": "lb_nota5",
-     "p": "Você já conhece! <b>Quanto vale?</b>",
-     "c": "5 REAIS",
-     "e": [
-      "1 REAL",
-      "2 REAIS",
-      "10 REAIS"
-     ],
-     "d": [
-      "Procure o <b>número</b> escrito no dinheiro.",
-      "O número diz quantos reais vale. Vamos ler juntos.",
-      "É <b>5 REAIS</b>. Toque para seguir."
-     ]
-    },
-    {
-     "img": "lb_nota10",
-     "p": "Você já conhece! <b>Quanto vale?</b>",
-     "c": "10 REAIS",
-     "e": [
-      "1 REAL",
-      "2 REAIS",
-      "5 REAIS"
-     ],
-     "d": [
-      "Procure o <b>número</b> escrito no dinheiro.",
-      "O número diz quantos reais vale. Vamos ler juntos.",
-      "É <b>10 REAIS</b>. Toque para seguir."
-     ]
-    },
-    {
-     "img": "lb_nota20",
-     "p": "Você já conhece! <b>Quanto vale?</b>",
-     "c": "20 REAIS",
-     "e": [
-      "1 REAL",
-      "2 REAIS",
-      "5 REAIS"
-     ],
-     "d": [
-      "Procure o <b>número</b> escrito no dinheiro.",
-      "O número diz quantos reais vale. Vamos ler juntos.",
-      "É <b>20 REAIS</b>. Toque para seguir."
-     ]
+     "nome": "5 REAIS"
     }
    ],
    "dadosExtra": {
-    "TITULO": "QUANTO VALE",
-    "FECHO": "Muito bem! Você acertou tudo."
+    "ORDTXT": {
+     "selo": "EM ORDEM",
+     "balao": "Ponha o dinheiro <b>do que vale menos ao que vale mais</b>.",
+     "hint": "Toque no dinheiro ou arraste até a fila.",
+     "d": [
+      "Olhe o número em cada dinheiro e procure o <b>menor</b>.",
+      "O menor que sobrou está <b>piscando</b>. Toque nele.",
+      "Era este! Vamos juntos: eu ponho e você segue."
+     ],
+     "fim": "Fila pronta! Do que vale menos ao que vale mais."
+    }
    }
   },
   {
@@ -1852,104 +1733,45 @@
   },
   {
    "id": "f27",
-   "mec": "classificar",
-   "selo": "SEPARE",
-   "enunciado": "Você já separa sozinho: <b>moeda</b> ou <b>nota</b>?",
-   "dica": "Moeda é de metal e redonda; nota é de papel.",
+   "mec": "ordenar",
+   "selo": "EM ORDEM",
+   "enunciado": "Ponha o dinheiro do que vale menos ao que vale mais.",
+   "dica": "Procure sempre o dinheiro que vale menos entre os que sobraram.",
    "conceito": "objetivo7",
    "dados": [
     {
-     "k": "moeda",
-     "n": "MOEDA<br>(de metal)",
-     "img": "lb_moeda1",
-     "voz": "moeda"
+     "v": 2,
+     "img": "lb_nota2",
+     "nome": "2 REAIS"
     },
     {
-     "k": "nota",
-     "n": "NOTA<br>(de papel)",
+     "v": 5,
      "img": "lb_nota5",
-     "voz": "nota"
+     "nome": "5 REAIS"
+    },
+    {
+     "v": 10,
+     "img": "lb_nota10",
+     "nome": "10 REAIS"
+    },
+    {
+     "v": 20,
+     "img": "lb_nota20",
+     "nome": "20 REAIS"
     }
    ],
    "dadosExtra": {
-    "FICHAS": [
-     {
-      "img": "lb_moeda1",
-      "alvo": "moeda",
-      "t": "1 REAL"
-     },
-     {
-      "img": "lb_nota2",
-      "alvo": "nota",
-      "t": "2 REAIS"
-     },
-     {
-      "img": "lb_nota5",
-      "alvo": "nota",
-      "t": "5 REAIS"
-     },
-     {
-      "img": "lb_nota10",
-      "alvo": "nota",
-      "t": "10 REAIS"
-     },
-     {
-      "img": "lb_nota20",
-      "alvo": "nota",
-      "t": "20 REAIS"
-     },
-     {
-      "img": "lb_moeda1",
-      "alvo": "moeda",
-      "t": "1 REAL"
-     },
-     {
-      "img": "lb_nota5",
-      "alvo": "nota",
-      "t": "5 REAIS"
-     },
-     {
-      "img": "lb_nota10",
-      "alvo": "nota",
-      "t": "10 REAIS"
-     },
-     {
-      "img": "lb_c05",
-      "alvo": "moeda",
-      "t": "5 CENTAVOS"
-     },
-     {
-      "img": "lb_c10",
-      "alvo": "moeda",
-      "t": "10 CENTAVOS"
-     },
-     {
-      "img": "lb_c25",
-      "alvo": "moeda",
-      "t": "25 CENTAVOS"
-     },
-     {
-      "img": "lb_c50",
-      "alvo": "moeda",
-      "t": "50 CENTAVOS"
-     },
-     {
-      "img": "lb_nota50",
-      "alvo": "nota",
-      "t": "50 REAIS"
-     },
-     {
-      "img": "lb_nota100",
-      "alvo": "nota",
-      "t": "100 REAIS"
-     }
-    ],
-    "DICAS": [
-     "Olhe o número: pequeno é pouco, grande é muito.",
-     "1 e 5 são pouco; 10 e 20 são muito.",
-     "A gaveta certa está acesa. Toque nela."
-    ],
-    "ENUN": "Você já separa sozinho: <b>moeda</b> ou <b>nota</b>?"
+    "ORDTXT": {
+     "selo": "EM ORDEM",
+     "balao": "Ponha o dinheiro <b>do que vale menos ao que vale mais</b>.",
+     "hint": "Toque no dinheiro ou arraste até a fila.",
+     "d": [
+      "Olhe o número em cada dinheiro e procure o <b>menor</b>.",
+      "O menor que sobrou está <b>piscando</b>. Toque nele.",
+      "Era este! Vamos juntos: eu ponho e você segue."
+     ],
+     "fim": "Fila pronta! Do que vale menos ao que vale mais."
+    }
    }
   },
   {
