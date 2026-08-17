@@ -809,56 +809,59 @@
   },
   {
    "id": "f11",
-   "mec": "comparar",
-   "selo": "COMPARAR",
-   "enunciado": "Compare o dinheiro. <b>Qual vale mais?</b>",
-   "dica": "Quanto maior o número, mais vale.",
+   "mec": "domino",
+   "selo": "DOMINÓ DO DINHEIRO",
+   "enunciado": "Encaixe cada dinheiro na ponta do número igual.",
+   "dica": "Olhe o número do dinheiro e ache a ponta com esse mesmo número.",
    "conceito": "objetivo3",
    "dados": [
     {
-     "a": 2,
-     "b": 5,
-     "modo": "blocos",
-     "imgA": "lb_nota2",
-     "imgB": "lb_nota5",
-     "semSinal": true,
-     "pergunta": "mais",
-     "selo": "QUAL VALE MAIS?",
-     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
-     "voz": "Olhe os dois. Qual vale mais?"
+     "selo": "DOMINÓ DO DINHEIRO",
+     "esq": "dinheiro",
+     "dir": "num",
+     "semente": 1,
+     "enun": "Encaixe cada <b>dinheiro</b> na ponta do <b>número igual</b>.",
+     "voz": "Encaixe cada dinheiro na ponta do número igual.",
+     "cadeia": [
+      1,
+      2,
+      5,
+      10
+     ],
+     "imgs": {
+      "1": "lb_moeda1",
+      "2": "lb_nota2",
+      "5": "lb_nota5",
+      "10": "lb_nota10",
+      "20": "lb_nota20",
+      "50": "lb_nota50",
+      "100": "lb_nota100"
+     }
     },
     {
-     "a": 10,
-     "b": 20,
-     "modo": "blocos",
-     "imgA": "lb_nota10",
-     "imgB": "lb_nota20",
-     "semSinal": true,
-     "pergunta": "mais",
-     "selo": "QUAL VALE MAIS?",
-     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
-     "voz": "Olhe os dois. Qual vale mais?"
-    },
-    {
-     "a": 5,
-     "b": 5,
-     "modo": "blocos",
-     "imgA": "lb_nota5",
-     "imgB": "lb_nota5",
-     "semSinal": true,
-     "pergunta": "mais",
-     "selo": "SERÁ QUE É IGUAL?",
-     "enun": "Olhe bem os dois. <b>Qual vale mais?</b>",
-     "voz": "Olhe bem os dois. Qual vale mais?"
+     "selo": "MAIS UMA CORRENTE",
+     "esq": "dinheiro",
+     "dir": "num",
+     "semente": 2,
+     "enun": "Encaixe cada <b>dinheiro</b> na ponta do <b>número igual</b>.",
+     "voz": "Encaixe cada dinheiro na ponta do número igual.",
+     "cadeia": [
+      2,
+      5,
+      10,
+      20
+     ],
+     "imgs": {
+      "1": "lb_moeda1",
+      "2": "lb_nota2",
+      "5": "lb_nota5",
+      "10": "lb_nota10",
+      "20": "lb_nota20",
+      "50": "lb_nota50",
+      "100": "lb_nota100"
+     }
     }
-   ],
-   "dadosExtra": {
-    "D1": [
-     "Olhe o número em cada dinheiro. Quanto maior o número, mais ele vale.",
-     "Compare os dois números. O dinheiro certo está aceso.",
-     "Toque no dinheiro que está aceso."
-    ]
-   }
+   ]
   },
   {
    "id": "f13",
@@ -1471,104 +1474,18 @@
   },
   {
    "id": "f21",
-   "mec": "classificar",
-   "selo": "SEPARE",
-   "enunciado": "Guarde cada uma: é <b>moeda</b> ou <b>nota</b>?",
-   "dica": "Moeda é de metal e redonda; nota é de papel.",
+   "mec": "quebra-cabeca",
+   "selo": "MONTE O PIPO",
+   "enunciado": "Monte o Pipo! Ponha cada pedaço no lugar certo.",
+   "dica": "Olhe as bordas e as cores de cada pedaço para achar o lugar.",
    "conceito": "objetivo6",
-   "dados": [
-    {
-     "k": "moeda",
-     "n": "MOEDA<br>(de metal)",
-     "img": "lb_moeda1",
-     "voz": "moeda"
-    },
-    {
-     "k": "nota",
-     "n": "NOTA<br>(de papel)",
-     "img": "lb_nota5",
-     "voz": "nota"
-    }
-   ],
-   "dadosExtra": {
-    "FICHAS": [
-     {
-      "img": "lb_moeda1",
-      "alvo": "moeda",
-      "t": "1 REAL"
-     },
-     {
-      "img": "lb_nota2",
-      "alvo": "nota",
-      "t": "2 REAIS"
-     },
-     {
-      "img": "lb_nota5",
-      "alvo": "nota",
-      "t": "5 REAIS"
-     },
-     {
-      "img": "lb_nota10",
-      "alvo": "nota",
-      "t": "10 REAIS"
-     },
-     {
-      "img": "lb_nota20",
-      "alvo": "nota",
-      "t": "20 REAIS"
-     },
-     {
-      "img": "lb_moeda1",
-      "alvo": "moeda",
-      "t": "1 REAL"
-     },
-     {
-      "img": "lb_nota5",
-      "alvo": "nota",
-      "t": "5 REAIS"
-     },
-     {
-      "img": "lb_nota10",
-      "alvo": "nota",
-      "t": "10 REAIS"
-     },
-     {
-      "img": "lb_c05",
-      "alvo": "moeda",
-      "t": "5 CENTAVOS"
-     },
-     {
-      "img": "lb_c10",
-      "alvo": "moeda",
-      "t": "10 CENTAVOS"
-     },
-     {
-      "img": "lb_c25",
-      "alvo": "moeda",
-      "t": "25 CENTAVOS"
-     },
-     {
-      "img": "lb_c50",
-      "alvo": "moeda",
-      "t": "50 CENTAVOS"
-     },
-     {
-      "img": "lb_nota50",
-      "alvo": "nota",
-      "t": "50 REAIS"
-     },
-     {
-      "img": "lb_nota100",
-      "alvo": "nota",
-      "t": "100 REAIS"
-     }
-    ],
-    "DICAS": [
-     "Olhe o número: pequeno é pouco, grande é muito.",
-     "1 e 5 são pouco; 10 e 20 são muito.",
-     "A gaveta certa está acesa. Toque nela."
-    ],
-    "ENUN": "Guarde cada uma: é <b>moeda</b> ou <b>nota</b>?"
+   "dados": {
+    "img": "lb_pipo_puzzle",
+    "cols": 3,
+    "lins": 2,
+    "w": 336,
+    "h": 384,
+    "fundo": true
    }
   },
   {
@@ -1616,56 +1533,59 @@
   },
   {
    "id": "f23",
-   "mec": "comparar",
-   "selo": "COMPARAR",
-   "enunciado": "Agora bem parecidos. <b>Qual vale mais?</b>",
-   "dica": "Quanto maior o número, mais vale.",
+   "mec": "domino",
+   "selo": "DOMINÓ DO DINHEIRO",
+   "enunciado": "Encaixe cada dinheiro na ponta do número igual.",
+   "dica": "Olhe o número do dinheiro e ache a ponta com esse mesmo número.",
    "conceito": "objetivo6",
    "dados": [
     {
-     "a": 10,
-     "b": 50,
-     "modo": "blocos",
-     "imgA": "lb_nota10",
-     "imgB": "lb_nota50",
-     "semSinal": true,
-     "pergunta": "mais",
-     "selo": "QUAL VALE MAIS?",
-     "enun": "Olhe os dois. <b>Qual vale mais?</b>",
-     "voz": "Olhe os dois. Qual vale mais?"
+     "selo": "DOMINÓ DO DINHEIRO",
+     "esq": "dinheiro",
+     "dir": "num",
+     "semente": 5,
+     "enun": "Encaixe cada <b>dinheiro</b> na ponta do <b>número igual</b>.",
+     "voz": "Encaixe cada dinheiro na ponta do número igual.",
+     "cadeia": [
+      5,
+      10,
+      20,
+      50
+     ],
+     "imgs": {
+      "1": "lb_moeda1",
+      "2": "lb_nota2",
+      "5": "lb_nota5",
+      "10": "lb_nota10",
+      "20": "lb_nota20",
+      "50": "lb_nota50",
+      "100": "lb_nota100"
+     }
     },
     {
-     "a": 20,
-     "b": 100,
-     "modo": "blocos",
-     "imgA": "lb_nota20",
-     "imgB": "lb_nota100",
-     "semSinal": true,
-     "pergunta": "menos",
-     "selo": "QUAL VALE MENOS?",
-     "enun": "Olhe os dois. <b>Qual vale menos?</b>",
-     "voz": "Olhe os dois. Qual vale menos?"
-    },
-    {
-     "a": 50,
-     "b": 50,
-     "modo": "blocos",
-     "imgA": "lb_nota50",
-     "imgB": "lb_nota50",
-     "semSinal": true,
-     "pergunta": "mais",
-     "selo": "SERÁ QUE É IGUAL?",
-     "enun": "Olhe bem os dois. <b>Qual vale mais?</b>",
-     "voz": "Olhe bem os dois. Qual vale mais?"
+     "selo": "MAIS UMA CORRENTE",
+     "esq": "dinheiro",
+     "dir": "num",
+     "semente": 1,
+     "enun": "Encaixe cada <b>dinheiro</b> na ponta do <b>número igual</b>.",
+     "voz": "Encaixe cada dinheiro na ponta do número igual.",
+     "cadeia": [
+      1,
+      5,
+      10,
+      20
+     ],
+     "imgs": {
+      "1": "lb_moeda1",
+      "2": "lb_nota2",
+      "5": "lb_nota5",
+      "10": "lb_nota10",
+      "20": "lb_nota20",
+      "50": "lb_nota50",
+      "100": "lb_nota100"
+     }
     }
-   ],
-   "dadosExtra": {
-    "D1": [
-     "Olhe o número em cada dinheiro. Quanto maior o número, mais ele vale.",
-     "Compare os dois números. O dinheiro certo está aceso.",
-     "Toque no dinheiro que está aceso."
-    ]
-   }
+   ]
   },
   {
    "id": "f25",
@@ -1800,98 +1720,18 @@
   },
   {
    "id": "f28",
-   "mec": "caixa-dinheiro",
-   "selo": "CAIXA-DINHEIRO",
-   "enunciado": "Você é o caixa! Monte o valor na <b>bandeja</b>.",
-   "dica": "Olhe a régua verde: ela diz quanto falta.",
+   "mec": "quebra-cabeca",
+   "selo": "MONTE O PIPO",
+   "enunciado": "Monte o Pipo! Ponha cada pedaço no lugar certo.",
+   "dica": "Olhe as bordas e as cores de cada pedaço para achar o lugar.",
    "conceito": "objetivo7",
-   "dados": [
-    {
-     "v": 1,
-     "t": "moeda",
-     "img": "lb_moeda1"
-    },
-    {
-     "v": 2,
-     "t": "nota",
-     "img": "lb_nota2"
-    },
-    {
-     "v": 5,
-     "t": "nota",
-     "img": "lb_nota5"
-    },
-    {
-     "v": 10,
-     "t": "nota",
-     "img": "lb_nota10"
-    },
-    {
-     "v": 20,
-     "t": "nota",
-     "img": "lb_nota20"
-    }
-   ],
-   "dadosExtra": {
-    "RODADAS": [
-     {
-      "base": 0,
-      "alvo": 8,
-      "selo": "COMPRA",
-      "img": "lb_carrinho",
-      "nome": "CARRINHO",
-      "fala": "Compre o CARRINHO! Ele custa <b>8 reais</b>. Monte o dinheiro na bandeja."
-     },
-     {
-      "base": 0,
-      "alvo": 3,
-      "selo": "COMPRA",
-      "img": "lb_piao",
-      "nome": "PIÃO",
-      "fala": "Compre o PIÃO! Ele custa <b>3 reais</b>. Monte o dinheiro na bandeja."
-     },
-     {
-      "base": 0,
-      "alvo": 5,
-      "selo": "COMPRA",
-      "img": "lb_bola",
-      "nome": "BOLA",
-      "fala": "Compre a BOLA! Ela custa <b>5 reais</b>. Monte o dinheiro na bandeja."
-     }
-    ],
-    "DINHEIRO": [
-     {
-      "v": 1,
-      "t": "moeda",
-      "img": "lb_moeda1"
-     },
-     {
-      "v": 2,
-      "t": "nota",
-      "img": "lb_nota2"
-     },
-     {
-      "v": 5,
-      "t": "nota",
-      "img": "lb_nota5"
-     },
-     {
-      "v": 10,
-      "t": "nota",
-      "img": "lb_nota10"
-     },
-     {
-      "v": 20,
-      "t": "nota",
-      "img": "lb_nota20"
-     }
-    ],
-    "DICAS": [
-     "Olhe a régua verde: ela mostra quanto ainda falta.",
-     "Escolha um dinheiro que <b>caiba</b> no que falta. As que cabem estão piscando.",
-     "Deixa comigo: eu ponho esta peça e você continua."
-    ],
-    "CAIXAIMG": "lb_registradora"
+   "dados": {
+    "img": "lb_pipo_puzzle",
+    "cols": 3,
+    "lins": 2,
+    "w": 336,
+    "h": 384,
+    "fundo": true
    }
   },
   {
