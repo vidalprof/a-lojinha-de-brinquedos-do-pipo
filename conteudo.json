@@ -1558,7 +1558,7 @@
      "selo": "DOMINÓ DO DINHEIRO",
      "esq": "dinheiro",
      "dir": "num",
-     "semente": 5,
+     "semente": 1,
      "enun": "Encaixe cada <b>dinheiro</b> na ponta do <b>número igual</b>.",
      "voz": "Encaixe cada dinheiro na ponta do número igual.",
      "cadeia": [
