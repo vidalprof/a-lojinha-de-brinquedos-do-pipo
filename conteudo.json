@@ -81,9 +81,9 @@
      "p": "Olhe o dinheiro. <b>Quanto ele vale?</b>",
      "c": "5 REAIS",
      "e": [
-      "1 REAL",
       "2 REAIS",
-      "10 REAIS"
+      "10 REAIS",
+      "20 REAIS"
      ],
      "d": [
       "Procure o <b>número</b> escrito no dinheiro.",
@@ -96,9 +96,9 @@
      "p": "Olhe o dinheiro. <b>Quanto ele vale?</b>",
      "c": "10 REAIS",
      "e": [
-      "1 REAL",
-      "2 REAIS",
-      "5 REAIS"
+      "5 REAIS",
+      "20 REAIS",
+      "50 REAIS"
      ],
      "d": [
       "Procure o <b>número</b> escrito no dinheiro.",
@@ -111,9 +111,9 @@
      "p": "Olhe o dinheiro. <b>Quanto ele vale?</b>",
      "c": "20 REAIS",
      "e": [
-      "1 REAL",
-      "2 REAIS",
-      "5 REAIS"
+      "10 REAIS",
+      "5 REAIS",
+      "50 REAIS"
      ],
      "d": [
       "Procure o <b>número</b> escrito no dinheiro.",
@@ -122,18 +122,33 @@
      ]
     },
     {
-     "img": "lb_moeda1",
+     "img": "lb_nota50",
      "p": "Olhe o dinheiro. <b>Quanto ele vale?</b>",
-     "c": "1 REAL",
+     "c": "50 REAIS",
      "e": [
-      "2 REAIS",
-      "5 REAIS",
+      "10 REAIS",
+      "20 REAIS",
+      "100 REAIS"
+     ],
+     "d": [
+      "Procure o <b>número</b> escrito no dinheiro.",
+      "O número diz quantos reais vale. Vamos ler juntos.",
+      "É <b>50 REAIS</b>. Toque para seguir."
+     ]
+    },
+    {
+     "img": "lb_nota100",
+     "p": "Olhe o dinheiro. <b>Quanto ele vale?</b>",
+     "c": "100 REAIS",
+     "e": [
+      "20 REAIS",
+      "50 REAIS",
       "10 REAIS"
      ],
      "d": [
       "Procure o <b>número</b> escrito no dinheiro.",
       "O número diz quantos reais vale. Vamos ler juntos.",
-      "É <b>1 REAL</b>. Toque para seguir."
+      "É <b>100 REAIS</b>. Toque para seguir."
      ]
     }
    ],
